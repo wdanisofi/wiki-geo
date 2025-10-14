@@ -3,12 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Ángulos Geométricos</title>
   </head>
 
   <body>
     <header>
       <h1>Ángulos Geométricos</h1>
+      <nav>
+        <ul>
+          <li><a href="#que-es-un-angulo">¿Qué es un ángulo</a></li>
+          <li><a href="#angulos-por-su-medida">Ángulos por su medida</a></li>
+          <li>
+            <a href="#angulos-por-su-posicion">Ángulos por su posición</a>
+          </li>
+          <li><a href="#angulos-por-su-suma">Ángulos por su suma</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -22,11 +33,11 @@
 
         <h3>Componentes de un ángulo</h3>
         <dl>
-          <dt>Vértice</dt>
+          <dt><b>Vértice</b></dt>
           <dd>El punto común donde se originan los rayos (punto O).</dd>
-          <dt>Lados</dt>
+          <dt><b>Lados</b></dt>
           <dd>Los dos rayos que forman el ángulo.</dd>
-          <dt>Abertura</dt>
+          <dt><b>Abertura</b></dt>
           <dd>El espacio entre los dos rayos.</dd>
         </dl>
 
@@ -70,8 +81,8 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Por su medida</h2>
+      <section aria-labelledby="angulos-por-su-medida">
+        <h2 id="angulos-por-su-medida">Por su medida</h2>
         <p>Los ángulos se clasifican según cuántos grados midan.</p>
         <ul>
           <li>
@@ -106,8 +117,8 @@
         </figure>
       </section>
 
-      <section>
-        <h2>Por su posición</h2>
+      <section aria-labelledby="angulos-por-su-posicion">
+        <h2 id="angulos-por-su-posicion">Por su posición</h2>
         <p>Aquí es donde vemos cómo se relacionan los ángulos entre sí.</p>
         <ul>
           <li>
@@ -132,11 +143,11 @@
             src="./assets/img/angulos_por_su_posicion.png"
             alt="Diagrama que muestra la clasificación de los ángulos por su posición"
           />
+          <figcaption>Clasificación de los ángulos por su posición</figcaption>
         </figure>
-        <figcaption>Clasificación de los ángulos por su posición</figcaption>
       </section>
-      <section>
-        <h2>Por su suma</h2>
+      <section aria-labelledby="angulos-por-su-suma">
+        <h2 id="angulos-por-su-suma">Por su suma</h2>
         <h3>Ángulos complementarios</h3>
         <ul>
           <li>Son <b>dos ángulos</b> cuya suma es <b>90°</b>.</li>
@@ -160,6 +171,7 @@
             👉 Ejemplo: un ángulo de 110° y otro de 70° → juntos suman 180°.
           </li>
         </ul>
+
         <p>📌 Importante:</p>
         <ul>
           <li>
@@ -172,14 +184,15 @@
           </li>
           <li>Pero si lo están, se llaman además <b>adyacentes</b>.</li>
         </ul>
+
         <figure>
           <img
             src="./assets/img/angulos_por_su_suma.png"
             loading="lazy"
             alt="Diagrama que muestra la clasificación de los ángulos por su suma"
           />
+          <figcaption>Clasificación de los ángulos por su suma</figcaption>
         </figure>
-        <figcaption>Clasificación de los ángulos por su suma</figcaption>
       </section>
     </main>
   </body>
