@@ -2,23 +2,62 @@
   outline: 1px solid red;
 } */
 
+/* Reset del box model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 1000px;
   margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  padding: 0 0 7px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+.menu-item {
+  display: inline-block;
+  margin: 0 7px;
+  padding: 7px;
+  color: rgb(13, 53, 128);
+  background-color: rgb(220, 236, 245);
+  border: solid 3px rgb(13, 53, 128);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
 }
 
 dl {
-  background-color: rgb(220, 236, 245);
   padding: 1rem;
+  background-color: rgb(220, 236, 245);
+  border: 2px solid lightgrey;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   color: rgb(13, 53, 128);
-  border: 10px solid transparent;
-  border-image: linear-gradient(120deg, #9dbee9 0%, #bacde5 100%) 1;
 }
 
 figure {
@@ -26,6 +65,7 @@ figure {
 }
 
 img {
+  margin-top: 10px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -38,4 +78,22 @@ img {
 figcaption {
   margin-top: 10px;
   color: rgb(13, 53, 128);
+}
+
+blockquote {
+  margin-bottom: 1rem;
+  padding: 7px;
+  color: rgb(92, 13, 13);
+  background-color: rgb(255, 206, 198);
+  border: solid 2px rgb(231, 113, 98);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
 }
