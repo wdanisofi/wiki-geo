@@ -95,6 +95,11 @@ footer {
 
 /* 2. Mostramos el contenedor móvil y le damos estilos. */
 @media screen and (width <= 768px) {
+  body {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+
   .desktop-version {
     display: none;
   }
